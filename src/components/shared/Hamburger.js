@@ -142,7 +142,7 @@ const Hamburger = () => {
               <div>{chevronRight}</div>
             </Link>
               
-          <NavbarButtons />
+          <div onClick={openMenu}><NavbarButtons /></div>
         </div>
 
        <FooterSocialMedia />

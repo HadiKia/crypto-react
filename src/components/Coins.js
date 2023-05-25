@@ -62,6 +62,7 @@ const Coins = () => {
     };
 
     fetchAPI();
+    document.title = "Market";
   }, []);
 
   const searchHandler = (event) => {

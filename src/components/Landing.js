@@ -77,6 +77,7 @@ const Landing = () => {
     counter(0, 115, 90);
     counter(1, 85, 90);
     counter(2, 95, 90);
+    document.title = "Home";
   }, []);
 
   return (

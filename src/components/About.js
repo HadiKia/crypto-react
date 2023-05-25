@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // style
 const spanStyle = 'text-[#5367FF] font-medium'
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Project";
+  }, []);
+
   return (
     <div className="container max-w-screen-xl mx-auto h-screen bg-[#e6e9f2] md:bg-white px-4 py-8">
       <div className="bg-white py-5 px-4 md:p-6 lg:p-8 xl:p-9 rounded-xl text-left text-[#232530]">
