@@ -4,7 +4,7 @@ import graph2 from "../images/graph2.png";
 
 // styles
 const coinBox =
-  "flex items-center justify-between gap-x-3 overflow-scroll md:overflow-hidden text-[#232530] mb-6 md:mb-7";
+  "flex items-center justify-between gap-x-3 overflow-scroll md:overflow-hidden text-[#232530] dark:text-[#f1f1f1] mb-6 md:mb-0 md:py-4 md:hover:bg-[#f4f9fc] dark:bg-[#121318] dark:md:hover:bg-[#080808] duration-700";
 
 const Coin = ({ name, image, symbol, price, marketCap, priceChange }) => {
   return (
@@ -25,7 +25,7 @@ const Coin = ({ name, image, symbol, price, marketCap, priceChange }) => {
         {/* price change */}
        <div className="flex items-center gap-x-2 justify-center">
        <span className={priceChange > 0 ? "text-[#48D49E] text-xs font-medium md:text-base" : "text-[#FF8266] text-xs font-medium md:text-base"}>
-          {priceChange.toFixed(2)}%
+          {priceChange} %
         </span>
         <span className="w-12 md:w-14">
           {priceChange > 0 ? (

@@ -11,13 +11,13 @@ import { Fragment } from "react";
 
 // styles
 const buttonCategory =
-  "outline-none pb-4 md:pb-5 border-b-2 border-white text-[#232530] font-medium duration-500 flex items-center justify-center gap-x-1";
+  "outline-none pb-4 md:pb-5 border-b-2 dark:border-[#9295A600] dark:text-[#9295A6] border-white text-[#232530] font-medium duration-500 flex items-center justify-center gap-x-1";
 const buttonCategoryActive =
   "outline-none pb-4 md:pb-5 border-b-2 border-[#5367FF] text-[#5367FF] font-medium duration-500 flex items-center justify-center gap-x-1";
-const searchBox = "flex items-center gap-x-1 px-2 xl:px-4 py-2.5 text-[#9295A6] border-b-2 md:border md:rounded-lg md:mb-6np xl:w-full xl:max-w-md"
-const inputSearchBox = "outline-none px-2 text-[#232530] placeholder:text-[#9295A6] placeholder:text-sm w-full"
+const searchBox = "flex items-center gap-x-1 px-2 xl:px-4 py-3 text-[#9295A6] border-b-2 md:border md:rounded-lg md:mb-6 xl:w-full xl:max-w-md dark:border-[#232530]"
+const inputSearchBox = "outline-none px-2 text-[#232530] dark:text-[#f1f1f1] placeholder:text-[#9295A6] placeholder:text-sm w-full dark:bg-[#121318]"
 const categoryBox = "flex justify-start gap-x-6 text-xs lg:text-sm lg:gap-x-8 overflow-scroll lg:overflow-hidden "
-const titleInformation = 'flex justify-between mb-5 px-2 py-4 border-t border-b text-[#9295A6] font-medium text-xs md:text-sm md:border-t-0'
+const titleInformation = 'flex justify-between mb-5 px-2 py-4  border-b dark:border-[#232530] text-[#9295A6] font-medium text-xs md:text-sm md:border-t-0'
 // icons
 const filterIcon = (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
@@ -124,13 +124,13 @@ const Coins = () => {
   };
 
   return (
-    <div className="container max-w-screen-xl mx-auto px-4 py-8 bg-[#e6e9f2] md:bg-white">
-      <div className="bg-white py-5 px-4 md:p-6 lg:p-8 xl:p-9 rounded-xl text-left flex justify-between gap-x-2 md:gap-x-10 text-[#232530] mb-8">
+    <div className="container max-w-screen-xl mx-auto px-4 py-[33px] bg-[#e6e9f2] md:bg-white dark:bg-[#080808]">
+      <div className="bg-white dark:bg-[#121318] py-5 px-4 md:p-6 lg:p-8 xl:p-9 rounded-xl text-left flex justify-between gap-x-2 md:gap-x-10 text-[#232530] mb-8">
         <div>
-          <h2 className="font-medium text-xl lg:text-2xl mb-2 lg:mb-3">
+          <h2 className="font-medium text-xl lg:text-2xl mb-2 lg:mb-3 dark:text-[#f1f1f1]">
             Cryptocurrency Prices by Market Cap
           </h2>
-          <p className="text-sm lg:text-base text-[#6C7080]">
+          <p className="text-sm lg:text-base text-[#6C7080] dark:text-[#9295A6]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus aspernatur nemo ea earum tempore libero.
           </p>
@@ -141,7 +141,7 @@ const Coins = () => {
         </div>
       </div>
 
-      <div className="bg-white py-6 px-4 md:p-6 lg:p-8 xl:p-9 rounded-xl">
+      <div className="bg-white dark:bg-[#121318] py-6 px-4 md:p-6 lg:p-8 xl:p-9 rounded-xl">
         <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
           <Tab.List>
             <div className="flex gap-y-7 flex-col md:flex-row-reverse md:justify-between md:items-center md:gap-x-2">

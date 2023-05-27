@@ -10,12 +10,13 @@ import { notify } from "../helper/toast";
 //images
 import googleIcon from "../images/google.svg";
 import appleIcon from "../images/apple.svg";
+import appleDarkIcon from '../images/apple2.png'
 import metaIcon from "../images/meta.svg";
 
 // Style
 // Style
 const formStyle =
-  "bg-white py-7 px-6 md:p-6 lg:p-8 xl:p-9 rounded-xl text-left text-[#232530] md:max-w-md";
+  "bg-white dark:bg-[#121318] py-7 px-6 md:p-6 lg:p-8 xl:p-9 rounded-xl text-left text-[#232530] dark:text-[#f1f1f1] md:max-w-md";
 const formField = "flex flex-col gap-y-1 mb-8";
 const formFieldInput =
   "flex align-center gap-x-3 px-2 py-3 border-b border-[#5367FF]";
@@ -23,12 +24,12 @@ const errorText = "text-red-400 h-2 text-sm px-2";
 const inputIcon = "text-[#5367FF]";
 const inputIconUncompleted = "text-red-400";
 const formInput =
-  "placeholder:text-[#9295A6] placeholder:text-sm text-sm outline-none";
+"placeholder:text-[#9295A6] placeholder:text-sm text-sm outline-none dark:bg-[#121318]";
 const submitButton =
   "w-full text-center bg-[#5367FF] text-white font-medium py-3 rounded-md active:scale-90 duration-700 mb-9";
 const checkBoxSpan = "text-[#5367FF] ";
 const formPagesLink =
-  "text-center px-4 text-sm text-[#545766] font-medium mb-8";
+"text-center text-sm text-[#545766] dark:text-[#9295A6] font-medium mb-8";
 
 // Icons
 const emailIcon = (
@@ -124,8 +125,8 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-[#e6e9f2]">
-    <div className="container max-w-screen-xl mx-auto px-4 py-8 flex justify-center">
+    <div className="bg-[#e6e9f2] dark:bg-[#080808]">
+    <div className="container max-w-screen-xl mx-auto px-4 py-[33px] flex justify-center">
       <form onSubmit={submitHandler} className={formStyle}>
         <h2 className="text-2xl font-medium mb-8">Sign In to Dynamic</h2>
 
@@ -191,17 +192,20 @@ const Login = () => {
         </p>
 
         <div className="flex items-center text-[#9295A6] font-medium text-sm gap-x-5 mb-6">
-          <span className="flex-1 h-[1px] bg-[#9295A6]"></span>
+          <span className="flex-1 h-[1px] bg-[#9295A6] dark:bg-[#232530]"></span>
           <span>or continue with</span>
-          <span className="flex-1 h-[1px] bg-[#9295A6]"></span>
+          <span className="flex-1 h-[1px] bg-[#9295A6] dark:bg-[#232530]"></span>
         </div>
 
         <div className="flex items-center justify-center gap-x-6 mb-3">
           <div className="w-10 cursor-pointer flex items-center">
             <img src={googleIcon} alt="logo" />
           </div>
-          <div className="w-10 cursor-pointer flex items-center">
+          <div className="w-10 cursor-pointer flex items-center dark:hidden">
             <img src={appleIcon} alt="logo" />
+          </div>
+          <div className="hidden dark:flex items-center w-8 cursor-pointer dark:bg-[#121318]">
+           <img src={appleDarkIcon} alt="logo" />
           </div>
           <div className="w-10 cursor-pointer flex items-center">
             <img src={metaIcon} alt="logo" />

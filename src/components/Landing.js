@@ -82,13 +82,13 @@ const Landing = () => {
 
   return (
     <>
-      <div className="bg-[#f4f9fc]">
+      <div className="bg-[#f4f9fc] dark:bg-[#121318]">
         <div className="container max-w-screen-xl mx-auto px-8 md:px-4 py-14 md:py-10 rounded-xl text-left mb-10">
           <h2 className="font-semibold text-2xl mb-4 lg:mb-6 lg:text-4xl">
-            <p className="text-[#232530]">Buy & Sell</p>
+            <p className="text-[#232530] dark:text-[#f1f1f1]">Buy & Sell</p>
             <p className="text-[#5367FF]">Crypto Instant</p>
           </h2>
-          <p className="text-[#232530] font-light mb-10 text-sm lg:text-xl md:w-2/3">
+          <p className="text-[#232530] dark:text-[#9295A6] font-light mb-10 text-sm lg:text-xl md:w-2/3">
             Join world's biggest & trusted Exchange. Trade inBitcoin, Ethereum,
             Ripple and many more currencies.
           </p>
@@ -102,28 +102,28 @@ const Landing = () => {
       </div>
 
       <div className="container max-w-screen-xl mx-auto flex flex-col md:flex-row mb-6 md:py-10">
-        <div className="text-[#232530] py-7 border-b md:w-full md:border-b-0">
+        <div className="text-[#232530] dark:text-[#f1f1f1] py-7 border-b md:w-full md:border-b-0 dark:border-[#232530]">
           <p className="font-medium text-5xl pb-1">{nums[0]}K</p>
-          <p className="font-light">People have joined</p>
+          <p className="font-light dark:text-[#9295A6]">People have joined</p>
         </div>
-        <div className="text-[#232530] py-7 border-b md:w-full md:border-b-0 md:border-l">
+        <div className="text-[#232530] dark:text-[#f1f1f1] py-7 border-b md:w-full md:border-b-0 md:border-l dark:border-[#232530]">
           <p className="font-medium text-5xl pb-1">{nums[1]}K</p>
-          <p className="font-light">VIP users have joined</p>
+          <p className="font-light dark:text-[#9295A6]">VIP users have joined</p>
         </div>
-        <div className="text-[#232530] py-7 md:w-full md:border-l">
+        <div className="text-[#232530] dark:text-[#f1f1f1] py-7 md:w-full md:border-l dark:border-[#232530]">
           <p className="font-medium text-5xl pb-1">{nums[2]}+</p>
-          <p className="font-light">Big Companies have joined</p>
+          <p className="font-light dark:text-[#9295A6]">Big Companies have joined</p>
         </div>
       </div>
 
-      <div className="bg-[#f1f2f4]">
+      <div className="bg-[#f1f2f4] dark:bg-[#121318]">
         <div className="container max-w-screen-xl mx-auto text-[#232530] py-8 md:py-14 px-2 flex flex-col justify-between md:flex-row md:px-4">
           <div className="text-center md:text-left mb-10 font-medium md:max-w-xs lg:max-w-sm xl:max-w-md">
             <p className="text-[#5367FF] py-2">Create Profile</p>
-            <h3 className="text-xl font-semibold pb-4 xl:text-2xl">
+            <h3 className="text-xl font-semibold pb-4 xl:text-2xl dark:text-[#f1f1f1]">
               Easy Way to Get Started
             </h3>
-            <p className="text-sm font-light xl:text-base">
+            <p className="text-sm font-light xl:text-base dark:text-[#9295A6]">
               {" "}
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
               aspernatur voluptate quisquam laboriosam veritatis porro explicabo
@@ -133,20 +133,20 @@ const Landing = () => {
 
           <div className="px-2 flex flex-col md:flex-row md:gap-5">
             <div>
-              <div className="bg-white rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
+              <div className="bg-white dark:bg-[#080808] rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
                 <span className="w-12 text-[#5367FF]">{shieldIcon}</span>
                 <div className="text-left md:text-center">
-                  <p className="font-semibold pb-2">Verify Bank Account</p>
-                  <p className="text-xs lg:text-sm font-light">
+                  <p className="font-semibold pb-2 dark:text-[#f1f1f1]">Verify Bank Account</p>
+                  <p className="text-xs lg:text-sm font-light dark:text-[#9295A6]">
                     Verify Your Bank Account in Easy Way
                   </p>
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
+              <div className="bg-white dark:bg-[#080808] rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
                 <span className="w-12 text-[#5367FF]">{userIcon}</span>
                 <div className="text-left md:text-center">
-                  <p className="font-semibold pb-2">Create an Account</p>
-                  <p className="text-xs lg:text-sm font-light">
+                  <p className="font-semibold pb-2 dark:text-[#f1f1f1]">Create an Account</p>
+                  <p className="text-xs lg:text-sm font-light dark:text-[#9295A6]">
                     Sign up with email and mobile in just 5 minutes
                   </p>
                 </div>
@@ -154,20 +154,20 @@ const Landing = () => {
             </div>
 
             <div>
-              <div className="bg-white rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
+              <div className="bg-white dark:bg-[#080808] rounded-xl p-8 flex items-center justify-start gap-x-10 mb-5 md:flex-col md:gap-y-4 lg:px-4 py-6">
                 <span className="w-12 text-[#5367FF]">{walletIcon}</span>
                 <div className="text-left md:text-center">
-                  <p className="font-semibold pb-2">Add Funds to Wallet</p>
-                  <p className="text-xs lg:text-sm font-light">
+                  <p className="font-semibold pb-2 dark:text-[#f1f1f1]">Add Funds to Wallet</p>
+                  <p className="text-xs lg:text-sm font-light dark:text-[#9295A6]">
                     Quickly add money to your investment wallet
                   </p>
                 </div>
               </div>
-              <div className="bg-white rounded-xl p-8 flex items-center justify-start gap-x-10 md:flex-col md:gap-y-4 lg:px-4 py-6">
+              <div className="bg-white dark:bg-[#080808] rounded-xl p-8 flex items-center justify-start gap-x-10 md:flex-col md:gap-y-4 lg:px-4 py-6">
                 <span className="w-12 text-[#5367FF]">{chartIcon}</span>
                 <div className="text-left md:text-center">
-                  <p className="font-semibold pb-2">Start Trading instantly</p>
-                  <p className="text-xs lg:text-sm font-light">
+                  <p className="font-semibold pb-2 dark:text-[#f1f1f1]">Start Trading instantly</p>
+                  <p className="text-xs lg:text-sm font-light dark:text-[#9295A6]">
                     But & Sell a variety of top coins at the best prices
                   </p>
                 </div>
@@ -180,10 +180,10 @@ const Landing = () => {
       <div className="container max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between">
         <div className="text-[#232530] text-center md:text-left px-4 py-14 md:max-w-xs lg:max-w-sm xl:max-w-md">
           <p className="font-medium text-[#5367FF] py-2">Download the app</p>
-          <h2 className="font-semibold text-2xl mb-5">
+          <h2 className="font-semibold text-2xl mb-5 dark:text-[#f1f1f1]">
             Trade, Anywhere, Anytime
           </h2>
-          <p className="font-light text-sm xl:text-base">
+          <p className="font-light text-sm xl:text-base dark:text-[#9295A6]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             eligendi optio saepe atque iste quas similique incidunt eius
             doloremque harum quisquam, nostrum ullam cum rem laborum autem
@@ -193,35 +193,35 @@ const Landing = () => {
 
         <div className="px-4 flex justify-center flex-wrap gap-2 md:gap-4 md:py-14 mb-20">
           <div className="flex gap-x-2 md:gap-x-4">
-            <div className="flex flex-col justify-evenly text-center text-[#232530] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
+            <div className="flex flex-col justify-evenly text-center text-[#232530] dark:text-[#f1f1f1] dark:bg-[#121318] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
               <div className="flex justify-center mb-4">{windowsIcon}</div>
               <div>
                 <h4 className="font-medium mb-1">Windows</h4>
-                <p className="text-xs text-[#AEB1BF]">Download for PC-Client</p>
+                <p className="text-xs text-[#AEB1BF] dark:text-[#9295A6]">Download for PC-Client</p>
               </div>
             </div>
-            <div className="flex flex-col justify-evenly text-center text-[#232530] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
+            <div className="flex flex-col justify-evenly text-center text-[#232530] dark:text-[#f1f1f1] dark:bg-[#121318] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
               <div className="flex justify-center mb-4">{windowsIcon}</div>
               <div>
                 <h4 className="font-medium mb-1">Windows</h4>
-                <p className="text-xs text-[#AEB1BF]">Download for PC-Client</p>
+                <p className="text-xs text-[#AEB1BF] dark:text-[#9295A6]">Download for PC-Client</p>
               </div>
             </div>
           </div>
 
           <div className="flex gap-x-2 md:gap-x-4">
-            <div className="flex flex-col justify-evenly text-center text-[#232530] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
+            <div className="flex flex-col justify-evenly text-center text-[#232530] dark:text-[#f1f1f1] dark:bg-[#121318] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
               <div className="flex justify-center mb-4">{windowsIcon}</div>
               <div>
                 <h4 className="font-medium mb-1">Windows</h4>
-                <p className="text-xs text-[#AEB1BF]">Download for PC-Client</p>
+                <p className="text-xs text-[#AEB1BF] dark:text-[#9295A6]">Download for PC-Client</p>
               </div>
             </div>
-            <div className="flex flex-col justify-evenly text-center text-[#232530] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
+            <div className="flex flex-col justify-evenly text-center text-[#232530] dark:text-[#f1f1f1] dark:bg-[#121318] hover:bg-[#E2F2FF] duration-700 cursor-pointer p-3 rounded-lg">
               <div className="flex justify-center mb-4">{windowsIcon}</div>
               <div>
                 <h4 className="font-medium mb-1">Windows</h4>
-                <p className="text-xs text-[#AEB1BF]">Download for PC-Client</p>
+                <p className="text-xs text-[#AEB1BF] dark:text-[#9295A6]">Download for PC-Client</p>
               </div>
             </div>
           </div>

@@ -45,12 +45,12 @@ const FooterSocialMedia = () => {
         </div>
         <div className={`${itemsStyles} text-xs`}>
           <span className="px-4">Privacy</span>
-          <span className="px-4 border-l border-[#9295A6]">Terms</span>
-          <span className="px-4 border-l border-[#9295A6]">Sitemap</span>
+          <span className="px-4 border-l border-[#9295A6] dark:border-[#232530]">Terms</span>
+          <span className="px-4 border-l border-[#9295A6] dark:border-[#232530]">Sitemap</span>
         </div>
       </div>
       <div
-        className={`${itemsStyles} flex items-center justify-center gap-x-4`}
+        className={`${itemsStyles} flex items-center justify-center gap-x-4 dark:-mb-4 dark:md:mb-0 dark:pb-4 `}
       >
         <Link to="https://www.instagram.com/ihadikia">{instagramIcon}</Link>
         <Link to="https://github.com/HadiKia">{githubIcon}</Link>
